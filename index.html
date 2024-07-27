@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه کتاب مک او اس</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', 'Roboto', sans-serif;
+            direction: rtl;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode header,
+        .dark-mode footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #1f1f1f;
+        }
+
+        .dark-mode .border-gray-300 {
+            border-color: #444;
+        }
+
+        .dark-mode .bg-gray-200 {
+            background-color: #292929;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 transition duration-300 ease-in-out">
+    <header class="bg-gray-900 text-white p-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+        <div class="text-2xl font-bold flex items-center gap-2">
+            <span>📚</span>
+            <span>فروشگاه کتاب</span>
+        </div>
+        <nav>
+            <ul class="flex gap-4">
+                <li><a href="#home" class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">خانه</a></li>
+                <li><a href="#categories"
+                        class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">دسته‌ها</a></li>
+                <li><a href="#top-books"
+                        class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">برترین‌ها</a></li>
+                <li><a href="#updates"
+                        class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">بروزرسانی‌ها</a></li>
+                <li><a href="#about" class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">درباره ما</a>
+                </li>
+                <li><a href="#contact" class="text-white hover:bg-yellow-500 px-3 py-2 rounded transition">تماس با
+                        ما</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-4">
+            <div class="flex gap-2">
+                <input type="text" placeholder="جستجو..."
+                    class="px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 transition">
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">جستجو</button>
+            </div>
+            <div class="flex gap-2">
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">ورود</button>
+                <button
+                    class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">ثبت‌نام</button>
+            </div>
+            <div class="flex items-center gap-2">
+                <input type="checkbox" id="dark-mode-switch" class="hidden">
+                <label for="dark-mode-switch"
+                    class="cursor-pointer flex items-center bg-yellow-500 px-4 py-2 rounded text-white transition">
+                    <span class="mr-2">☀️</span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main class="p-4 max-w-6xl mx-auto">
+        <section id="home"
+            class="mb-10 p-6 bg-white rounded-lg shadow-lg opacity-0 transform translate-y-12 transition">
+            <h2 class="text-2xl font-bold mb-6">کتاب‌های پیشنهادی</h2>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div
+                    class="bg-gray-200 border border-gray-300 rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://via.placeholder.com/150" alt="کتاب 1" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">کتاب 1</h3>
+                    <p class="mb-4">توضیحات کوتاه در مورد کتاب 1</p>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">اضافه به
+                        سبد</button>
+                </div>
+                <div
+                    class="bg-gray-200 border border-gray-300 rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://via.placeholder.com/150" alt="کتاب 2" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">کتاب 2</h3>
+                    <p class="mb-4">توضیحات کوتاه در مورد کتاب 2</p>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">اضافه به
+                        سبد</button>
+                </div>
+                <div
+                    class="bg-gray-200 border border-gray-300 rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://via.placeholder.com/150" alt="کتاب 3" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">کتاب 3</h3>
+                    <p class="mb-4">توضیحات کوتاه در مورد کتاب 3</p>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">اضافه به
+                        سبد</button>
+                </div>
+            </div>
+        </section>
+        <section id="categories"
+            class="mb-10 p-6 bg-white rounded-lg shadow-lg opacity-0 transform translate-y-12 transition">
+            <h2 class="text-2xl font-bold mb-6">دسته‌ها</h2>
+            <div class="flex gap-6 justify-center">
+                <div class="bg-gray-200 p-6 rounded-lg text-center transition hover:bg-gray-300 cursor-pointer">دسته 1
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg text-center transition hover:bg-gray-300 cursor-pointer">دسته 2
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg text-center transition hover:bg-gray-300 cursor-pointer">دسته 3
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg text-center transition hover:bg-gray-300 cursor-pointer">دسته 4
+                </div>
+            </div>
+        </section>
+        <section id="top-books"
+            class="mb-10 p-6 bg-white rounded-lg shadow-lg opacity-0 transform translate-y-12 transition">
+            <h2 class="text-2xl font-bold mb-6">برترین‌ها</h2>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div
+                    class="bg-gray-200 border border-gray-300 rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://via.placeholder.com/150" alt="کتاب 4" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">کتاب 4</h3>
+                    <p class="mb-4">توضیحات کوتاه در مورد کتاب 4</p>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">اضافه به
+                        سبد</button>
+                </div>
+                <div
+                    class="bg-gray-200 border border-gray-300 rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://via.placeholder.com/150" alt="کتاب 5" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">کتاب 5</h3>
+                    <p class="mb-4">توضیحات کوتاه در مورد کتاب 5</p>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">اضافه به
+                        سبد</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-white p-4 text-center shadow-md">
+        <p>&copy; 2024 فروشگاه کتاب. تمامی حقوق محفوظ است.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
